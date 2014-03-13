@@ -1,0 +1,62 @@
+body {
+}
+
+.navbar-inverse a {
+    color: #CCC !important;
+}
+
+.navbar-inverse a:hover {
+    color: #FFF !important;
+}
+
+.navbar-inverse .dropdown-menu a {
+    color: #999 !important;
+}
+
+.navbar-inverse .dropdown-menu a:hover {
+    color: #444 !important;
+}
+
+.navbar .navbar-fixed-top {
+    height: 5%;
+}
+
+h1 {
+    color: #C8C8C8;
+}
+
+.games-container {
+    height: 100%;
+}
+
+#carousel-games {
+   overflow: hidden;
+}
+
+.carousel-caption {
+    margin-bottom: 30px;
+}
+
+.carousel-control {
+    font-size: 50pt;
+}
+
+.carousel-control.left {
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(256, 256, 256, 0.5)), to(rgba(256, 256, 256, 0.0001)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(256, 256, 256, 0.5) 0), color-stop(rgba(256, 256, 256, 0.0001) 100%));
+  background-image: -moz-linear-gradient(left, rgba(256, 256, 256, 0.5) 0, rgba(256, 256, 256, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(256, 256, 256, 0.5) 0, rgba(256, 256, 256, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(256, 256, 256, 0.0001)), to(rgba(256, 256, 256, 0.5)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(256, 256, 256, 0.0001) 0), color-stop(rgba(256, 256, 256, 0.5) 100%));
+  background-image: -moz-linear-gradient(left, rgba(256, 256, 256, 0.0001) 0, rgba(256, 256, 256, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(256, 256, 256, 0.0001) 0, rgba(256, 256, 256, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}

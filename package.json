@@ -1,0 +1,30 @@
+{
+  "name": "grunt-seed",
+  "version": "0.0.0",
+  "description": "grunt-seed ==========",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/atav32/grunt-seed.git"
+  },
+  "author": "Brian Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atav32/grunt-seed/issues"
+  },
+  "homepage": "https://github.com/atav32/grunt-seed",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "karma": "^0.12.24",
+    "grunt-karma": "^0.9.0",
+    "karma-jasmine": "^0.2.3",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-coverage": "^0.2.6",
+    "grunt-cli": "^0.1.13",
+    "load-grunt-tasks": "^1.0.0"
+  }
+}

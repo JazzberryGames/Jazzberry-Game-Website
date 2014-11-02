@@ -1,0 +1,43 @@
+options:
+  # Paths
+  branch: grunt.file.read('../.git/HEAD').toString().split('/')[2].slice(0, -1)
+  basePath: '../'
+
+  # Settings
+  frameworks:
+    - 'jasmine'
+  background: false
+  singleRun: true
+  browsers:
+    - 'ChromeCanary'
+    #- 'PhantomJS'
+    #- 'Firefox'
+    #- 'Safari'
+    #- 'Chrome'
+  reporters:
+    #- 'progress'
+    - 'dots'
+    - 'html'
+    - 'coverage'
+  htmlReporter:
+    outputFile: '/tmp/<%= branch %>/units.html'
+  coverageReporter:
+    type: 'html'
+    dir: '/tmp/<%= branch %>/coverage'
+  preprocessors:
+    #'src/**/*.js': 'coverage'
+  plugins:
+    - 'karma-chrome-launcher'
+    - 'karma-coverage'
+    - 'karma-firefox-launcher'
+    - 'karma-htmlfile-reporter'
+    - 'karma-jasmine'
+    - 'karma-junit-reporter'
+    - 'karma-ng-html2js-preprocessor'
+    - 'karma-phantomjs-launcher'
+    - 'karma-safari-launcher'
+  # Files
+  files:
+    #- 'src/**/*.*'
+  auto:
+    autoWatch: true

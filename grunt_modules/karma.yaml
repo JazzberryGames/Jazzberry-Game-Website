@@ -33,7 +33,6 @@ options:
     - 'karma-htmlfile-reporter'
     - 'karma-jasmine'
     - 'karma-junit-reporter'
-    - 'karma-ng-html2js-preprocessor'
     - 'karma-phantomjs-launcher'
     - 'karma-safari-launcher'
   # Files

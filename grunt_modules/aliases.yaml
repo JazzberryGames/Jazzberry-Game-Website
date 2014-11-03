@@ -1,0 +1,4 @@
+default:
+  - 'karma'
+test:
+  - 'karma'

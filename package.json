@@ -1,7 +1,7 @@
 {
   "name": "grunt-seed",
   "version": "0.0.0",
-  "description": "grunt-seed ==========",
+  "description": "grunt-seed",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -25,6 +25,7 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-coverage": "^0.2.6",
     "grunt-cli": "^0.1.13",
-    "load-grunt-tasks": "^1.0.0"
+    "load-grunt-tasks": "^1.0.0",
+    "load-grunt-config": "^0.16.0"
   }
 }

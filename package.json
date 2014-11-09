@@ -26,6 +26,7 @@
     "karma-coverage": "^0.2.6",
     "grunt-cli": "^0.1.13",
     "load-grunt-tasks": "^1.0.0",
-    "load-grunt-config": "^0.16.0"
+    "load-grunt-config": "^0.16.0",
+    "grunt-gh-pages": "^0.9.1"
   }
 }

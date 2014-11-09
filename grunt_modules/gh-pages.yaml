@@ -1,0 +1,4 @@
+options:
+  base: 'dist'
+src:
+  - '**'

@@ -2,3 +2,5 @@ default:
   - 'karma'
 test:
   - 'karma'
+deploy:
+  - 'gh-pages'

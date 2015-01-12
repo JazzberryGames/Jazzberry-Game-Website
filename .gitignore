@@ -1,4 +1,8 @@
-node_modules/
+# Node & Grunt
+node_modules/*
+.grunt/*
+
+# Games
 kittyklimber/
 kittyklimberhome/
 lightspeed/
@@ -7,6 +11,9 @@ ThatCouldBeAGame/
 madeline/
 choosewisely/
 lettrix/
+
+# Misc
 .hg/
-choose_wisely/
 .env
+.DS_Store
+*.jar

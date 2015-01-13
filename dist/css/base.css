@@ -1,12 +1,17 @@
-html,body {
-  color: #404040;
-  font-family: helvetica, arial, sans-serif;
+html, body {
+  height:100%;
   margin: 0;
   padding: 0;
+  color: #404040;
+  font-family: helvetica, arial, sans-serif;
   text-align: center;
 }
 
-video {
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.screenshot, video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -17,9 +22,25 @@ video {
     z-index: -100;
 }
 
-html,body{height:100%;}
-.carousel,.item,.active{height:100%;}
-.carousel-inner{height:100%;}
+.carousel, .item, .active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+  overflow: hidden;
+}
+
+/*
+.screenshot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+  */
 
 .game-title {
   margin-top: 50px;

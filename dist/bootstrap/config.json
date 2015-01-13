@@ -376,17 +376,24 @@
     "@hr-border": "@gray-lighter"
   },
   "css": [
+    "print.less",
     "type.less",
     "code.less",
     "grid.less",
+    "forms.less",
     "buttons.less",
     "responsive-utilities.less",
     "glyphicons.less",
     "button-groups.less",
     "navs.less",
+    "navbar.less",
+    "breadcrumbs.less",
+    "pagination.less",
+    "pager.less",
     "labels.less",
     "badges.less",
     "jumbotron.less",
+    "thumbnails.less",
     "media.less",
     "list-group.less",
     "panels.less",
@@ -395,15 +402,18 @@
     "close.less",
     "component-animations.less",
     "dropdowns.less",
+    "popovers.less",
     "carousel.less"
   ],
   "js": [
+    "alert.js",
     "button.js",
     "carousel.js",
     "dropdown.js",
+    "tab.js",
     "affix.js",
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=1edb99277505ffc69972"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=0d8f8e69e01a5210d70a"
 }

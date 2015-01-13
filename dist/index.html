@@ -9,14 +9,14 @@
     <script type='text/javascript' src='js/video.js'></script>
     <script id="Google Analytics">
       (function(i,s,o,g,r,a,m){
-          i['GoogleAnalyticsObject']=r;
-          i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
-          a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];
-          a.async=1;
-          a.src=g;
-          m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-45976176-1', 'jazzberrygames.com');
     </script>
   </head>
@@ -24,12 +24,37 @@
     <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
-          <a href="http://www.jazzberrygames.com/" class="navbar-brand">
+          <a href="#" class="navbar-brand">
             Jazzberry Games
           </a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.jazzberrygames.com/#" id="games" target="_blank">
+                Games<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="games">
+                <li><a tabindex="-1" href="./choosewisely" target="_blank">
+                  Choose Wisely
+                </a></li>
+                <li><a tabindex="-1" href="http://chronoberry.s3.amazonaws.com/coralcaverns.html/" target="_blank">
+                  Coral Caverns
+                </a></li>
+                <li><a tabindex="-1" href="./kittyklimber" target="_blank">
+                  Kitty Klimber
+                </a></li>
+                <li><a tabindex="-1" href="./lightspeed" target="_blank">
+                  Lightspeed
+                </a></li>
+                <li><a tabindex="-1" href="./timelord" target="_blank">
+                  Time Lord
+                </a></li>
+              </ul>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="https://github.com/JazzberryGames" target="_blank">
                 Github
@@ -60,8 +85,6 @@
                 </a></li>
               </ul>
             </li> 
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="mailto:hey@jazzberrygames.com" target="_blank">
                 Contact
@@ -83,11 +106,19 @@
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-          <div class="item active" id='coralcavern'>
-            <video id="video0" width="320" height="240" autoplay muted>
-              <source src="https://s3.amazonaws.com/jazzberrygames-static/videos/coral_caverns.m4v" type="video/m4v">
-              Your browser does not support the video tag.
-            </video>
+          <div class="item active" id="choose-wisely">
+            <img class="screenshot" src="https://s3-us-west-1.amazonaws.com/jazzberry-static/images/choose_wisely.jpg" alt="Choose Wisely screenshot">
+            <div class="carousel-caption">
+              <h1 class="carousel-game-title-white">
+                Choose Wisely
+              </h1>
+              <a class="btn btn-lg btn-primary" href="./choosewisely" target="_blank" role="button">
+                Play Now
+              </a>
+            </div>
+          </div>
+          <div class="item" id='coral-cavern'>
+            <img class="screenshot" src="https://s3-us-west-1.amazonaws.com/jazzberry-static/images/coral_caverns.jpg" alt="Coral Caverns screenshot">
             <div class="carousel-caption">
               <h1 class="carousel-game-title-white">
                 Coral Caverns
@@ -97,42 +128,19 @@
               </a>
             </div>
           </div>
-          <div class="item">
-            <video id="video1" width="320" height="240" muted>
-              <source src="https://s3.amazonaws.com/jazzberrygames-static/videos/choose_wisely_2.m4v" type="video/m4v">
-              Your browser does not support the video tag.
-            </video>
-            <div class="carousel-caption">
-              <h1 class="carousel-game-title-white">
-                Choose Wisely
-              </h1>
-              <a class="btn btn-lg btn-primary" href="./choosewisely" target="_blank" role="button">
-<<<<<<< HEAD
-                Play Now
-              </a>
-            </div>
-          </div>
-          <div class="item" id='kittyklimber'>
-            <video id="video2" width="320" height="240" autoplay muted>
-              <source src="https://s3.amazonaws.com/jazzberrygames-static/videos/kitty_klimber_1.m4v" type="video/m4v">
-              Your browser does not support the video tag.
-            </video>
+          <div class="item" id='kitty-klimber'>
+            <img class="screenshot" src="https://s3-us-west-1.amazonaws.com/jazzberry-static/images/kitty_klimber.jpg" alt="Kitty Klimber screenshot">
             <div class="carousel-caption">
               <h1 class="carousel-game-title-white">
                 Kitty Klimber
               </h1>
-              <a class="btn btn-lg btn-primary" href="http://kittyklimber.com/kittyklimber/" target="_blank" role="button">
-=======
->>>>>>> fixed choose wisely link
+              <a class="btn btn-lg btn-primary" href="./kittyklimber/" target="_blank" role="button">
                 Play Now
               </a>
             </div>
           </div>
-          <div class="item">
-            <video id="video3" width="320" height="240" muted>
-              <source src="https://s3.amazonaws.com/jazzberrygames-static/videos/light_speed_2.m4v" type="video/m4v">
-              Your browser does not support the video tag.
-            </video>
+          <div class="item" id="lightspeed">
+            <img class="screenshot" src="https://s3-us-west-1.amazonaws.com/jazzberry-static/images/light_speed.jpg" alt="Lightspeed screenshot">
             <div class="carousel-caption">
               <h1 class="carousel-game-title">
                 Lightspeed
@@ -142,11 +150,8 @@
               </a>
             </div>
           </div>
-          <div class="item">
-            <video id="video4" width="320" height="240" muted>
-              <source src="https://s3.amazonaws.com/jazzberrygames-static/videos/time_lord_1.m4v" type="video/m4v">
-              Your browser does not support the video tag.
-            </video>
+          <div class="item" id="time-lord">
+            <img class="screenshot" src="https://s3-us-west-1.amazonaws.com/jazzberry-static/images/time_lord.jpg" alt="Time Lord screenshot">
             <div class="carousel-caption">
               <h1 class="carousel-game-title">
                 Time Lord
